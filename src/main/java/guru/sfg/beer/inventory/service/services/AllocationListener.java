@@ -2,7 +2,7 @@ package guru.sfg.beer.inventory.service.services;
 
 import guru.sfg.beer.inventory.service.config.JmsConfig;
 import guru.sfg.brewery.model.events.AllocateOrderRequest;
-import guru.sfg.brewery.model.events.AllocationOrderResult;
+import guru.sfg.brewery.model.events.AllocateOrderResult;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
@@ -20,7 +20,7 @@ public class AllocationListener {
 
     @JmsListener(destination = JmsConfig.ALLOCATE_ORDER_QUEUE)
     public void listen(AllocateOrderRequest request){
-        AllocationOrderResult.AllocationOrderResultBuilder builder = AllocationOrderResult.builder();
+        AllocateOrderResult.AllocateOrderResultBuilder builder = AllocateOrderResult.builder();
         builder.beerOrderDto(request.getBeerOrderDto());
 
         try {

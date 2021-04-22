@@ -1,28 +1,31 @@
 package guru.sfg.brewery.model.events;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.time.OffsetDateTime;
-import java.util.UUID;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
-import javax.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Null;
+import javax.validation.constraints.Positive;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.UUID;
+
+/**
+ * Created by jt on 2019-05-12.
+ */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-//@Null 外部无法修改read-only properties for client's side，create beer pojo will bind to 会有id version等
-public class BeerDto implements Serializable {
+public class BeerDto implements Serializable  {
 
-    static final long serialVersionUID = -6559000858289847715L;
-
+    static final long serialVersionUID = -5815566940065181210L;
 
     @Null
     private UUID id;
@@ -31,10 +34,11 @@ public class BeerDto implements Serializable {
     private Integer version;
 
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ",shape = JsonFormat.Shape.STRING )
+    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ssZ", shape=JsonFormat.Shape.STRING)
     private OffsetDateTime createdDate;
+
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ",shape = JsonFormat.Shape.STRING )
+    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ssZ", shape=JsonFormat.Shape.STRING)
     private OffsetDateTime lastModifiedDate;
 
     @NotBlank
@@ -43,16 +47,14 @@ public class BeerDto implements Serializable {
     @NotNull
     private String beerStyle;
 
-    //@Positive long可以string无
     @NotNull
     private String upc;
 
-    @NotNull
-    @Positive
     @JsonFormat(shape = JsonFormat.Shape.STRING)
+    @Positive
+    @NotNull
     private BigDecimal price;
 
     private Integer quantityOnHand;
-
 
 }
