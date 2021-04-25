@@ -1,0 +1,13 @@
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\brewery\model\events\BeerDto.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\brewery\model\events\BeerEvent.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\BeerInventoryApplication.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\domain\BeerInventory.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\mappers\BeerInventoryMapper.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\controllers\BeerInventoryController.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\brewery\model\events\NewInventoryEvent.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\domain\BaseEntity.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\config\JmsConfig.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\brewery\model\BeerInventoryDto.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\repositories\BeerInventoryRepository.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\services\NewInventoryListener.java
+C:\Users\Frido\spring\micro\mssc-brewery-ws\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\mappers\DateMapper.java
