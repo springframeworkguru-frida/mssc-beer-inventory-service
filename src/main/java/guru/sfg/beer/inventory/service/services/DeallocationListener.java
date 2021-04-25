@@ -5,11 +5,11 @@ import guru.sfg.brewery.model.events.DeallocateOrderRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component
+@Service
 public class DeallocationListener {
 
     private final AllocationService allocationService;
