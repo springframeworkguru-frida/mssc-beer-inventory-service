@@ -4,16 +4,19 @@ import guru.sfg.beer.inventory.service.domain.BeerInventory;
 import guru.sfg.beer.inventory.service.repositories.BeerInventoryRepository;
 import guru.sfg.brewery.model.BeerOrderDto;
 import guru.sfg.brewery.model.BeerOrderLineDto;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
+/**
+ * Created by jt on 2019-09-09.
+ */
 @Slf4j
 @RequiredArgsConstructor
 @Service
-
 public class AllocationServiceImpl implements AllocationService {
 
     private final BeerInventoryRepository beerInventoryRepository;
